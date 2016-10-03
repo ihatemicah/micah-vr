@@ -12,11 +12,21 @@
 
     <!-- START Scene -->
     <a-scene>
-        <a-box color="green" width="4" height="10" depth="2" position="10 2 -20" rotation="0 0 0" scale="2 0.5 3" src="http://i.imgur.com/GLAmc4Z.jpg">
-          <a-animation attribute="rotation" repeat="indefinite" to="0 0 360 " begin="200"
-          from="1 1 1" to="2 4 -8">
-        </a-animation>
-        </a-box>
+      <a-assets>
+        <img id="building-1" src="https://goo.gl/4T8c2H">
+      </a-assets>
+      <!-- box start -->
+      <!-- right side start -->
+      <a-box position="-1 1.5 2" rotation="0 45 0" width= "1" height= "1" depth="1" color="#FFF" src="#building-1"></a-box>
+      <a-box position="-1 1.5 1" rotation="0 45 0" width= "1" height= "1" depth="1" color="#333"></a-box>
+      <!-- right side end -->
+      <!-- left side start -->
+      <a-box position="2 1.5 2" rotation="0 85 0" width="1" height= "1" depth="1" color="#333"></a-box>
+      <!-- left side end -->
+      <!-- box end -->
+
+      <a-plane position="0 1.2 2" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"> </a-plane>
+
     </a-scene>
     <!-- END Scene -->
 </body>
